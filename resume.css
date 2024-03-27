@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #0099ff;
+    color: #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 1000;
+}
+.logo{
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #0099ff;
+}
+.container{
+    max-width: 800px;
+    background-color: #000;
+    margin: 60px auto;
+    height: 1250px;
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 0 2px 20px #fff;
+    border-radius: 15px;
+}
+.header{
+    text-align: center;
+}
+.header h1{
+    margin-bottom: 10px;
+}
+.header h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+.img-area{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 15px groove #0099ff;
+}
+.img-area img{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    flex: 1;
+    padding: 30px;
+}
+.left p{
+    line-height: 2;
+}
+.left ul li{
+    line-height: 2;
+}
+h2{
+    background-color: #0099ff;
+    padding: 15px;
+    color: #fff;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+}
+h1 span{
+    color: #0099ff;
+}
+.right{
+    flex: 1;
+    padding: 30px;
+}
+.right p{
+    line-height: 2.9;
+}
+.right ul li{
+    line-height: 2;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .header h1 {
+        font-size: 24px;
+    }
+    .header h3 {
+        font-size: 14px;
+    }
+    .img-area {
+        width: 150px;
+        height: 150px;
+    }
+    .left,
+    .right {
+        flex: 1 100%;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .left p,
+    .right p,
+    .left ul li,
+    .right ul li {
+        font-size: 14px;
+    }
+}
