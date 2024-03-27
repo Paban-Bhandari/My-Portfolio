@@ -314,3 +314,29 @@ form .btn2{
         font-size: 14px;
     }
 }
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+        position: static;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .header-text {
+        margin-top: 10%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .image {
+        display: none;
+    }
+}
